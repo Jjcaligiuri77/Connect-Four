@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('space.jpg');
+    }
+    </style>
+  <header>
+    <h2 class="head">CONNECT FOUR</h2>
+  </header>
+  <div id="connect-four">
+    <table id="board"></table>
+  </div>
+  <h1 id="symbol">&#8711</h1>
+  <div id='setup'>
+    <button id='restart'>Initiate Big Bang</button>
+  </div>
+  <p>''</p>
+  <div class="overlay exit">
+  </div>
+  <div class="end-game exit">
+    <div class="overlay-content">
+      <p class="message">End Game</p>
+      <button class="new-game">New Game</button>
+    </div>
+  </div>
+  <script src="connect4.js"></script>
+
+</body>
+</html>

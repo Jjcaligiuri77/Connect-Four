@@ -1,0 +1,152 @@
+.disc-animation {
+  animation-name: pulse;
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(-320px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.td-animation {
+  animation-name: transparent;
+}
+@keyframes transparent {
+  0% {
+    overflow: visible;
+  }
+  25% {
+  }
+  42% {
+  }
+  62% {
+  }
+  85% {
+    overflow: hidden;
+  }
+}
+
+#board td {
+  background-color: #0e0707;
+  border: solid 2px rgb(250, 243, 243);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+#column-top td {
+  border: dashed 1.5px rgb(146, 143, 143);
+  cursor: crosshair;
+}
+
+header {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.head {
+  font-weight: 600;
+  font-variant: normal;
+  font-size: 3.5rem;
+}
+
+#board {
+  background-color: #e0cf30;
+  border-radius: 15% 15% 2% 2%;
+  padding: 20px 20px 20px 20px;
+}
+
+#connect-four {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.disc {
+  margin: auto;
+  border-radius: 100%;
+  width: 90%;
+  height: 90%;
+  animation-iteration-count: 1;
+  animation-duration: 1.4s;
+}
+
+.player1 {
+	background-image: url("JUPITER.jpg");
+	background-size: 65px 49px;
+}
+
+.player2 {
+  background-image: url("EARTH.jpg");
+	background-size: 80px 65px;
+}
+
+.end-game {
+  justify-content: center;
+  display: flex;
+  margin: 12rem auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.overlay-content {
+  background-color: #e3e3e3;
+  color: #000000;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  width: 300px;
+  max-width: 100%;
+  height: 120px;
+  max-height: 100%;
+  border-radius: 2%;
+  padding: 10px;
+}
+
+.overlay {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+.new-game:hover {
+  background-color: #81233fc4;
+  cursor: pointer;
+}
+
+.exit {
+  display: none;
+  position: flex;
+}
+
+#setup {
+  text-align: center;
+}
+
+#restart {
+  background-color: rgb(165, 76, 177);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#restart:hover{
+  opacity: 0.6; 
+  cursor: pointer;
+}
+
+#symbol {
+  text-align: center;
+}
